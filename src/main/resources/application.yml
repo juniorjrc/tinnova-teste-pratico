@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  servlet:
+    contextPath: /tinnova
+
+spring:  datasource:    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tinnova?useTimezone=true&serverTimezone=UTC
+    username: ADMTINNOVA
+    password: 123TINNOVA
+  jpa:    properties:      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:      ddl-auto: update
+    show-sql: false      
